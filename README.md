@@ -20,8 +20,11 @@ Features
 2. if you use obfuscator it will be undetectable
 
 3. Now You need to use pyinstaller to convert python file to exe.
+
    open cmd and type pip install `auto_py_to_exe`
+   
    and after installed python `-m auto_py_to_exe`
+   
    browse file  and press covert .py .exe 
 
 <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
