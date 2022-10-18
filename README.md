@@ -23,7 +23,7 @@ Features
 
 4. open cmd and type pip install `auto_py_to_exe`
    
-  5.and after installed python `-m auto_py_to_exe`
+5.and after installed python `-m auto_py_to_exe`
    
 6. browse file  and press covert .py .exe 
 
