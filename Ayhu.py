@@ -15,8 +15,8 @@ import random
 import re
 import subprocess
 
-#  
-#  Ayhu#1337 on cord
+
+#  Ayhu#1337
 #
 
 
