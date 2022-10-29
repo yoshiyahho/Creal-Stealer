@@ -1,5 +1,5 @@
 <h1 align="center">
- Ayhu Stealer
+ Creal Stealer
 </h1>
 <h2 align="center">
  Educational purpose only! We are NOT responsible of anything you do with our software (if its illegal)
