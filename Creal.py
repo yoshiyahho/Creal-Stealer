@@ -15,9 +15,7 @@ import random
 import re
 import subprocess
 
-#  THIS IS 1.1.6 VERSION
-#
-# 
+# CODED BY ARTONUS & AYHU
 
 
 hook = "WEBHOOK HERE"
