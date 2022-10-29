@@ -18,7 +18,9 @@ import subprocess
 # CODED BY ARTONUS & AYHU
 
 
-hook = "WEBHOOK HERE"
+hook = ''
+with open("webhook.txt",'r') as f:
+    hook = f.read()
 DETECTED = False
 
 
