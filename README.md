@@ -1,5 +1,5 @@
-<h1 style="color: red;"> Creal Stealer </h1> 
-<p style="color: red;" If you can help you can write on telegram. [![Click to write(https://t.me/crealdevelopment)](https://t.me/crealdevelopment) &> 
+<h1> Creal Stealer </h1> 
+<p> If you can help you can write on telegram. [![Click to write(https://t.me/crealdevelopment)](https://t.me/crealdevelopment) &>  </p>
 
 
 # Features:
