@@ -2,14 +2,13 @@
 <p> If you can help you can write on telegram. [![Click to write(https://t.me/crealdevelopment)]</p>
 
 
-# Features:
-
-» Grab Discord Information and HQ Friend.
+## Features:
+» Grab Discord Information and HQ Friends.
 » Grab Telegram
 » Grab Password & cookies
 
 
-# Setup:
+## Setup:
  
 First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 If you use obfuscator it will be undetectable.
@@ -20,7 +19,7 @@ Browse file and press covert .py .exe
  
  <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
- # Pictures:
+## Pictures:
  
 <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/arto1.png"></img>
 
