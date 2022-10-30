@@ -3,9 +3,11 @@
 
 
 ## Features:
-» Grab Discord Information and HQ Friends.\
-» Grab Telegram\
-» Grab Password & cookies\
+» Grab Discord Information and HQ Friends.
+
+» Grab Telegram.
+
+» Grab Password & cookies.
 
 
 ## Setup:
