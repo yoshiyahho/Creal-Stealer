@@ -12,7 +12,7 @@
 
 ## Setup:
  
-First paste and save your webhook address instead of `"WEBHOOK HERE"` in webhook.txt
+First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 
 If you use obfuscator it will be undetectable.
 
