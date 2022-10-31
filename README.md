@@ -1,4 +1,5 @@
 <h1> Creal Stealer | by artonus & ayhu</h1> 
+<h2> FIXED COOKIE PROBLEM </h2>
 <p> If you can help you can write on telegram. [Click to write(https://t.me/crealdevelopment)]</p>
 
 
@@ -8,8 +9,6 @@
 » Grab Telegram.
 
 » Grab Password & cookies.
-
-» FIX COOKIE PROBLEM.
 
 ## Setup:
  
