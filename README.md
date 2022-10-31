@@ -9,6 +9,7 @@
 
 » Grab Password & cookies.
 
+» FIX COOKIE PROBLEM.
 
 ## Setup:
  
