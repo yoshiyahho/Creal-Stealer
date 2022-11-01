@@ -12,6 +12,8 @@
 
 »Grab Files.
 
+»Shows Crypto Wallets
+
 
 ## Setup:
  
