@@ -8,11 +8,9 @@
 
 » Grab Password & cookies.
 
-»Grab Discord Token.
+» Grab Files.
 
-»Grab Files.
-
-»Shows Crypto Wallets
+» Shows Crypto Wallets
 
 
 ## Setup:
