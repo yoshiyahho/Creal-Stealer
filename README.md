@@ -1,5 +1,5 @@
 <h1> Creal Stealer | Developing...</h1> 
-<h2> [!] WE WİLL ADD START UP </h2>
+<h2> [!] WE WİLL ADD START UP ! </h2>
 <p> If you need help you can write on discord Ayhu#1337 artonus#1000 </p>
 <p> If you need help you can write on telegram. [Click to write(https://t.me/crealdevelopment)]</p>
 
