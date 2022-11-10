@@ -1,10 +1,10 @@
-<h1> Creal Stealer | Developing...</h1> 
+<h1> Creal Stealer</h1> 
 <p align="center"> 
   <kbd>
 <img src="https://cdn.discordapp.com/attachments/864559355768602654/1040289089372557433/8df7a3389893f1d1ce1d4351c4076440.jpg" width="328"></img>
   </kbd>
 </p>
-<h2> [!] WE WİLL ADD START UP !  </h2>
+<h2>  WE WİLL ADD START UP   </h2>
 <p> If you need help you can write on discord Ayhu#1337 artonus#1000 </p>
 <p> If you need help you can write on telegram. [Click to write(https://t.me/crealdevelopment)]</p>
 
