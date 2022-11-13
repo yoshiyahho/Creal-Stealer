@@ -1,7 +1,7 @@
 <h1> Creal Stealer</h1> 
 <p align="center"> 
   <kbd>
-<img src="https://cdn.discordapp.com/attachments/864559355768602654/1040289089372557433/8df7a3389893f1d1ce1d4351c4076440.jpg" width="400"></img>
+<img src="https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png" width="400"></img>
   </kbd>
 </p>
 <h2>  WE WİLL ADD START UP ! </h2>
