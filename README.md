@@ -20,6 +20,8 @@
 
 » Grab metamask/exodus
 
+» Grab Telegram
+
 » Grab chromium based Passwords
 
 
