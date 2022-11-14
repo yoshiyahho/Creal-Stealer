@@ -16,7 +16,7 @@ import re
 import subprocess
 
 
-hook = ""
+hook = "WEBHOOK"
 
 
 DETECTED = False
