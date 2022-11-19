@@ -4,9 +4,9 @@
 <img src="https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png" width="400"></img>
   </kbd>
 </p>
-<h2>   </h2>
-<p> If you need help you can write on discord Ayhu#1337 artonus#1000 </p>
-<p> If you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
+<h2>if you have an error while installing try `pip install -r requirements.txt`</h2>
+<p> if you need help you can write on discord Ayhu#1337 artonus#1000 </p>
+<p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
 
 
 ## Features:
