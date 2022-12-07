@@ -1,7 +1,7 @@
 <h1 align="center"> Creal Stealer </h1> 
 <p align= "center"> <kbd> <img  src="https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"width="400"> </kbd><br><br>
 
-<p>if you need help you can write on discord Ayhu#1337</p>
+<p></p>
 <p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
 
 
