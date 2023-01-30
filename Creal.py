@@ -32,7 +32,6 @@ def g3t1p():
 requirements = [
     ["requests", "requests"],
     ["Crypto.Cipher", "pycryptodome"],
-    
 ]
 for modl in requirements:
     try: __import__(modl[0])
