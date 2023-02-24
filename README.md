@@ -6,6 +6,8 @@
 
 
 ## Features:
+»Startup
+
 » Grab Discord Information and HQ Friends.
 
 » Grab Password & cookies.
