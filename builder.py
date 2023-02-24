@@ -17,7 +17,7 @@ intro = """
  \______/ |__/  |__/|________/|__/  |__/|________/      |__/
                                                             
                                                             
-                    creator by ayhu & artonus                                           
+                 by ayhu & artonus                                           
 
 """
 
