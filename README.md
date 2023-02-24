@@ -23,7 +23,7 @@
 » Grab chromium based Passwords
 
 
-## Setup:
+##  Manuel Setup:
  
 First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 
