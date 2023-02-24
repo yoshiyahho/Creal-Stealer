@@ -1,5 +1,5 @@
 <h1 align="center"> Creal Stealer </h1> 
-<p align= "center"> <kbd> <img  src="https://i.pinimg.com/originals/f3/22/29/f3222920b0e592bfc0c60f7e56c4cc7d.gif"width="400"> </kbd><br><br>
+<p align= "center"> <kbd> <img  src="https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"width="400"> </kbd><br><br>
 
 <p></p>
 <p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
@@ -21,6 +21,18 @@
 » Grab Telegram
 
 » Grab chromium based Passwords
+
+
+## Setup:
+first open `install.bat`
+
+and open `builder.bat`
+
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="50%"src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/builder.png"></img>
+
+
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="50%"src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/builder2.png"></img>
+
 
 
 ##  Manual Setup:
