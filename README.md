@@ -8,6 +8,8 @@
 ## Features:
 »Startup
 
+»Discord injection
+
 » Grab Discord Information and HQ Friends.
 
 » Grab Password & cookies.
