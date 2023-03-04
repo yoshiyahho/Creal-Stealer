@@ -1,4 +1,4 @@
-<h1 align="center"> Creal Stealer </h1> 
+# Creal Stealer
 ![](https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg)
 
 <p></p>
