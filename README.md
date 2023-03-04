@@ -1,5 +1,5 @@
 <h1 align="center"> Creal Stealer </h1> 
-![](https://i.pinimg.com/originals/f3/22/29/f3222920b0e592bfc0c60f7e56c4cc7d.gif)
+![](https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg)
 
 <p></p>
 <p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
