@@ -1,5 +1,5 @@
 <h1 align="center"> Creal Stealer </h1> 
-<p align= "center"> <kbd> <img  src="https://i.pinimg.com/564x/29/63/f0/2963f0000c2670e9d15602f986ee1aba.jpg"width="400"> </kbd><br><br>
+![](https://i.pinimg.com/564x/29/63/f0/2963f0000c2670e9d15602f986ee1aba.jpg)
 <p></p>
 <p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
 
