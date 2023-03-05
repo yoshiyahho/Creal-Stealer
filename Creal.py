@@ -20,7 +20,7 @@ import uuid
 import socket
 import getpass
 import wmi
-import base64
+
 
 
 
