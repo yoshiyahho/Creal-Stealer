@@ -4,7 +4,7 @@
 
 
 
-<h1>THE SOFTWARE WILL NOT RECEIVE ANY MORE UPDATE BECAUSE IT IS USED FOR ANY PURPOSE</h1>
+<h1>THE SOFTWARE WILL NOT RECEIVE ANY MORE UPDATE BECAUSE IT IS USED FOR ANY BAD PURPOSE</h1>
 <p>What to do if you have been a victim of someone using our software;
 
 Win + R + %appdata% /Microsoft/Windows/Start Menu/Programs/Startup 
