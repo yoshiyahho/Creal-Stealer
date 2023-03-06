@@ -3,25 +3,29 @@
 <p></p>
 <p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
 
+<h2>BECAUSE IT IS USED VERY OUTSIDE OF THE PURPOSE, IT WILL NOT GET MORE UPDATES, ONLY REVIEW THE CODES AND USE IT TO TAKE PRECAUTIONS AGAINST  CRIME THE THIEVES</h2>
 
-## Features:
-»Startup
 
-»Discord injection
+<p><b> 👾 What to do if you have been a victim of someone using our software;</b>
 
-» Grab Discord Information and HQ Friends.
+Win + R + %appdata% /Microsoft/Windows/Start Menu/Programs/Startup 
 
-» Grab Password & cookies.
+<b>  if there is a foreign file in the folder delete it.</b>
 
-» Grab Files.
+Win + R + %localappdata% /Discord/app-version/modules/discord_desktop_core-1/discord_desktop_core 
 
-» Shows Crypto Wallets
+<b>  If the index.js file is larger than 1KB, right click the index.js file and open it with notepad and delete everything in it</b>
 
-» Grab metamask/exodus
 
-» Grab Telegram
+<b> 👾 A few things you can do to avoid being a victim;</b>
 
-» Grab chromium based Passwords
+ In our code, we have 2 list variables under the name of blacklist. If you put the names in the strings in the variable on your computer, the software will never run on your computer.
+
+ Posting every file sent from a foreigner to the virustotal site like crazy
+
+Using your computer with Windows 11. If the person in front of you only knows how to use the software, no one can easily infect you if you are using windows 11.
+
+ Adding 2FA verification to all your important accounts. This full time not working but can protect your account from being stolen. </p>
 
 
 ## Setup:
@@ -51,14 +55,6 @@ And press covert .py .exe
 
  <hr style="border-radius: 2%; margin-top: 60px; margin-bottom: 60px;" noshade="" size="20" width="100%">
 
-## Pictures:
- 
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/CrealNew1.jpg"></img>
-
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/CrealNew2.png"></img>
-
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/CrealNew3.png"></img>
- 
  
 ## Disclaimer:
 
