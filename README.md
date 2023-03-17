@@ -1,5 +1,5 @@
 <h1 align="center"> Creal Stealer </h1> 
-<p align= "center"> <kbd> <img  src="https://cdn.discordapp.com/attachments/1078000713914921043/1086310756888354866/31.png"width="500"> </kbd><br><br>
+<p align= "center"> <kbd> <img  src="https://cdn.discordapp.com/attachments/1078000713914921043/1086310756888354866/31.png"width="420"> </kbd><br><br>
 <p></p>
 
 
