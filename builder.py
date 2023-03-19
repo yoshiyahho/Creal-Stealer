@@ -91,7 +91,7 @@ while True:
                 Write.Print("\nYou have entered invalid. Please try again.", Colors.red_to_purple)
 
     elif choice == "2":
-        Write.Print("\nWe can share the fud for free but not now. if you want fud Telegram: https://t.me/Ayhhuu", Colors.red_to_yellow)
+        Write.Print("\nWe can share the fud for free but not now. if you want fud Telegram: https://t.me/CrealStealer", Colors.red_to_yellow)
 
     elif choice == "3":
         Write.Print("\nExiting the program...", Colors.red_to_yellow)
