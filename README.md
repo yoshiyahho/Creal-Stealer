@@ -7,7 +7,7 @@
 
 ## Features:
 
-» if you need help Telegram: https://t.me/Ayhhuu
+» if you need help Telegram: https://t.me/CrealStealer
 
 »Startup
 
