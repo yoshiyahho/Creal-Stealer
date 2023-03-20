@@ -27,6 +27,8 @@
 
 » Grab chromium based Passwords
 
+» thx for Lawxsz!
+
 
 ## Setup:
 first open `install.bat`
