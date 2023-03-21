@@ -5,7 +5,7 @@
 
 
 
-                                                                   🤖 Futures
+              🤖 Futures
 
 - Startup
 
@@ -21,7 +21,7 @@
 
 - Grab Telegram
 
-                                                                   ⬇️ Setup
+              ⬇️ Setup
 
                                                   
 - first open `install.bat`
@@ -30,7 +30,7 @@
 
 <div align="center"><img style="display: block; margin-left: auto; margin-right: auto; width: 65%;" src="https://i.imgur.com/B8f9Fka.png"></img></div>
 
-                                                                         🖼️ Pictures
+              🖼️ Pictures
  
 <div align="center">
     <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="60%" src="https://i.imgur.com/uXMda0h.png"></img> 
@@ -40,7 +40,7 @@
 </div>
  
  
-                                                                       ⬇️ Setup (Manuel)
+              ⬇️ Setup (Manuel)
  
 - First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 
