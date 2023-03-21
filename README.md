@@ -1,6 +1,6 @@
 <h1 align="center"> Creal Stealer </h1> 
 <p align= "center"> <kbd> <img  src="https://i.imgur.com/MjoICHp.png"width="420"> </kbd><br><br>
-<p align="center">if you need help https://t.me/CrealStealer</p>
+<p align="center"><a href="https://t.me/CrealStealer" target="_blank">if you need help</a></p>
 <p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">if you are infected</a></p>
 
 
