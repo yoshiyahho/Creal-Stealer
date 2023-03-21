@@ -40,7 +40,7 @@
 </div>
  
  
-                                                      ⬇️ Setup (Manuel)
+                                                    ⬇️ Setup (Manuel)
  
 - First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 
