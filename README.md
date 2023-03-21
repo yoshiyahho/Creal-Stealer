@@ -5,7 +5,7 @@
 
 
 
-                                                      🤖 Futures
+                                                          🤖 Futures
 
 - Startup
 
@@ -21,7 +21,7 @@
 
 - Grab Telegram
 
-                                                      ⬇️ Setup
+                                                          ⬇️ Setup
 
                                                   
 - first open `install.bat`
@@ -30,7 +30,7 @@
 
 <div align="center"><img style="display: block; margin-left: auto; margin-right: auto; width: 65%;" src="https://i.imgur.com/B8f9Fka.png"></img></div>
 
-                                                      🖼️ Pictures
+                                                          🖼️ Pictures
  
 <div align="center">
     <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="60%" src="https://i.imgur.com/uXMda0h.png"></img> 
@@ -40,7 +40,7 @@
 </div>
  
  
-                                                    ⬇️ Setup (Manuel)
+                                                        ⬇️ Setup (Manuel)
  
 - First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
 
@@ -64,11 +64,11 @@
 
 
 
-                                                      ⚠️ Disclaimer
+                                                          ⚠️ Disclaimer
 
 - This tool is for educational purposes only. It is coded for you to see how your files are simply stolen and how to take action. Do not use for illegal purposes. We are never responsible for illegal use. <bold>Educational purpose only!</bold>
 
-                                                      🪪 Licanse
+                                                          🪪 Licanse
 
 - By downloading this, you agree to the Commons Clause license and that you're not allowed to sell this repository or any code from this repository. For more info see https://commonsclause.com/.
 
