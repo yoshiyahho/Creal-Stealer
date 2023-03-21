@@ -27,7 +27,6 @@
 
 » Grab chromium based Passwords
 
-» thx for Lawxsz!
 
 
 ## Setup:
