@@ -5,7 +5,7 @@
 
 
 
-                                                                         🤖 Futures
+                                                                   🤖 Futures
 
 - Startup
 
@@ -21,7 +21,7 @@
 
 - Grab Telegram
 
-                                                                       ⬇️ Setup
+                                                                   ⬇️ Setup
 
                                                   
 - first open `install.bat`
