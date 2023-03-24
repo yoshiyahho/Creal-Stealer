@@ -24,6 +24,13 @@
 
 - Grab Telegram
 
+
+    
+
+                                                      💎Premium Stealer
+
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="40%" src="https://i.imgur.com/UXCb7gf.png"></img>
+
                                                       ⬇️ Setup
 
                                                   
