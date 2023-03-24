@@ -29,7 +29,7 @@
 
                                                       💎Premium Stealer
 
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="80%" src="https://i.imgur.com/UXCb7gf.png"></img>
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://i.imgur.com/UXCb7gf.png"></img>
 
                                                       ⬇️ Setup
 
