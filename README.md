@@ -30,7 +30,7 @@
                                                       💎Premium Stealer
 
 <img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://i.imgur.com/UXCb7gf.png"></img>
-<p align="center"><a href="https://t.me/slystealer" target="_blank">Telegram</a></p>
+
                                                       ⬇️ Setup
 
                                                   
