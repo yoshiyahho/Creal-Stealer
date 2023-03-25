@@ -1,7 +1,6 @@
 <h1 align="center"> Creal Stealer </h1> 
 <p align= "center"> <kbd> <img  src="https://i.imgur.com/MjoICHp.png"width="420"> </kbd><br><br>
 <p align="center"><a href="https://t.me/CrealStealer" target="_blank">if you need help join telegram group</a></p>
-<p align="center"><a href="https://t.me/slystealer" target="_blank">if you need premium fud stealer join us Telegram</a></p>
 <p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">if you are infected</a></p>
 
 
@@ -26,10 +25,6 @@
 
 
     
-
-                                                      💎Premium Stealer
-
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://i.imgur.com/UXCb7gf.png"></img>
 
                                                       ⬇️ Setup
 
