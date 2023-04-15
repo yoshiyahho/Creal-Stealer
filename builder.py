@@ -65,7 +65,7 @@ while True:
 
         obfuscate = False
         while True:
-            answer = input(Fore.CYAN + "\nDo you want to junk your code? (NOT Recommended!) (Y/N) " + Style.RESET_ALL)
+            answer = input(Fore.CYAN + "\nDo you want to junk your code?  (Y/N) " + Style.RESET_ALL)
             if answer.upper() == "Y":
                 os.system("python junk.py")
                 Write.Print(f"\n{filename} The file has been junked.", Colors.red_to_yellow)
