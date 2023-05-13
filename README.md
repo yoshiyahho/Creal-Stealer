@@ -3,7 +3,7 @@
 <p align="center"><a href="https://t.me/CrealStealer" target="_blank">if you need help join telegram group</a></p>
 <p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">if you are infected</a></p>
 <h2 align="center"> created by; </h1> 
-<p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">ayhu</a></p><p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">artonus</a></p>
+<p align="center"><a href="https://github.com/Ayhuuu" target="_blank">ayhu</a></p><p align="center"><a href="https://github.com/Art0nus" target="_blank">artonus</a></p>
 
 
 
