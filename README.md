@@ -1,7 +1,7 @@
 <h1 align="center"> Creal Stealer </h1> 
 <p align= "center"> <kbd> <img  src="https://i.imgur.com/MjoICHp.png"width="420"> </kbd><br><br>
 <p align="center"><a href="https://t.me/CrealStealer" target="_blank">join telegram group</a></p>
-<p align="center"><a href="https://github.com/Ayhuuu/Creal-Stealer/blob/main/IfYouInfected.md" target="_blank">if you are infected</a></p>
+
 <h2 align="center"> created by; </h1> 
 <p align="center"><a href="https://github.com/Ayhuuu" target="_blank">ayhu</a></p><p align="center"><a href="https://github.com/Art0nus" target="_blank">artonus</a></p>
 
