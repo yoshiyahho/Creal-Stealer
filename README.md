@@ -10,7 +10,7 @@
 <p align="center"><a href="https://github.com/Ayhuuu" target="_blank">ayhu</a></p><p align="center"><a href="https://github.com/Art0nus" target="_blank">artonus</a></p>
 
 
-
+<p align="center"><a href="https://t.me/CrealStealer" target="_blank">telegram group</a>
 
 
                                                       🤖 Futures
