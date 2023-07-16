@@ -20,8 +20,8 @@
 
 - Startup
 
-- Discord Injection
-:Send token, password, and email on login, credit card/paypal added, nitro bought or when password/mail is changed
+- Discord Injection:
+Send token, password, and email on login, credit card/paypal added, nitro bought or when password/mail is changed
 
 - Grab Browser cookies & passwords
 
