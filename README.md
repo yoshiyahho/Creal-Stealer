@@ -30,9 +30,9 @@
 
 - Grab Telegram
 
--Grab Steam
+- Grab Steam
 
--Grab Riot Games
+- Grab Riot Games
 
     
 
