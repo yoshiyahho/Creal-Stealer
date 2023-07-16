@@ -15,11 +15,13 @@
 
                                                       🤖 Futures
 
-- Startup
 
 - Grab Discord Token, Phone Number, E-mail and HQ Friends.
 
+- Startup
+
 - Discord Injection
+-Send token, password, and email on login, credit card/paypal added, nitro bought or when password/mail is changed
 
 - Grab Browser cookies & passwords
 
@@ -29,6 +31,9 @@
 
 - Grab Telegram
 
+-Grab Steam
+
+-Grab Riot Games
 
     
 
