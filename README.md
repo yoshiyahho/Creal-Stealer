@@ -25,7 +25,7 @@
 
 - Grab specials files
 
-- Grab Crypto Wallets. 🦊 Metamask, 🅰️ Atomic, 👾 Exodus
+- Grab Crypto Wallets. 🦊 Metamask, 🅰️ Atomic, 👾 Exodus, 🅱️ Binance, 💰 Coinbase, 🟡 Trust, 👻 Phantom
 
 - Grab Telegram
 
